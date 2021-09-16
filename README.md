@@ -1,5 +1,8 @@
 # OpenfinIntegration
 Before running 
+
+app.json , salesforce-view.json and aura are in OpenfinIntegration/openfinIntegratiionv4/OpenfinSalesforceInterop directory 
+
 Openfin side
   -  app.json has reference to preload.js that should be in appropriate path for webserver to load
   -  

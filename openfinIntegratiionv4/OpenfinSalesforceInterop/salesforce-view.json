@@ -1,0 +1,19 @@
+
+{
+    "fdc3InteropApi": "1.2",
+"interop": {
+                                                           "contextDeclaration": [
+                                                               "instrument"
+                                                           ]
+                                                       },
+                                                       "customData": {
+                                                           "id": "2574a7b5-678e-4d4a-a30b-5176a7513ea7"
+                                                       },
+                                                       "url": "https://login.salesforce.com",
+                                                       "preloadScripts": [
+                                                           {
+                                                           "url": "http://localhost:8080/preload.js"
+                                                           }
+                                                           ]
+
+  }

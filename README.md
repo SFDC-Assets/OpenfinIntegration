@@ -1,18 +1,19 @@
 # OpenfinIntegration
 Before running 
+ 
 
-app.json , salesforce-view.json and aura files are in OpenfinIntegration/openfinIntegratiionv4/OpenfinSalesforceInterop directory 
-
-Openfin side
+Openfin side - Look at openfinasset folder 
   -  app.json , preload.js ,salesforce-view.json that should be in appropriate path for webserver to load ( in windows it will be in public folder) 
  
   
  Salesforce side 
- - Load api.js as static resource
- - Install Aura 
- - Make sure the AURA code has reference to static resource
- - Create Console app and Embed Aura component  in the console utility bar
- - Install Apex controller openfinSFDataRetriever.cls file
+  Please install unlocked package 
+      sfdx force:package:install --package 04t1U000007Y8W4QAK --wait 10
+  Or 
+      https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1U000007Y8W4QAK
+
+NOTE ::  Please change the field name in OpenfinSFDataRetriever as per your need 
+ For Example ::if you are using FSC managed package please change apex class file OpenfinSFDataRetriever to use ECN_pc 
   
   
 Running openfin and salesforce

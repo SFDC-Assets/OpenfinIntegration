@@ -8,17 +8,18 @@ Openfin side - Look at openfinasset folder
   
  Salesforce side 
   -  Please install unlocked package 
-       - sfdx force:package:install --package 04t1U000007Y8W4QAK --wait 10
-       
-   OR 
-   
+       - sfdx force:package:install --package 04t1U000007Y8W4QAK --wait 10     
+   - OR 
       - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1U000007Y8W4QAK
-
-NOTE ::  Please change the field name in OpenfinSFDataRetriever as per your need 
-  - For Example ::if you are using FSC managed package please change apex class file OpenfinSFDataRetriever to use ECN_pc 
+ 
+    - NOTE ::  Please change the field name in OpenfinSFDataRetriever as per your need 
+    - For Example ::if you are using FSC managed package please change apex class file OpenfinSFDataRetriever to use ECN_pc 
   
+  - Create Console App (Preferred) 
+  - if Console app Add Aura component as Utility Item 
+  - if Standard app add  component on the page
   
-Running openfin and salesforce
+Running openfin and salesforce togather 
  - openfin  -l -c app.json
   - login if required 
    - Go to Console app 

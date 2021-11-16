@@ -37,21 +37,21 @@ How does  it work during run time
   - Once Salesforce is loaded, On salesforce side via static resource (part of unlocked package) we will import window.fin object 
   - Aura consumes that static resource and kicks of afterloadscript where we will intialize and bind instrument 
          - window.fin.salesforce.initFinApiInLwc();
-         - window.fin.me.interop.addContextHandler(handleInstrumentContext.bind(this), 'instrument');
+         - window.fin.me.interop.addContextHandler(handleInstrumentContext.bind(this), 'instrument'
 
  Openfin to SF exchange
   - Aura will call function handleInstrumentContext(contextInfo) 
-        - which will consume contextinfo (say ecn_id - aka Enterprise customer id /Global party id )
-        - apex class will consume that ecn_id and identify salesforce record id 
-        - workspaceAPI.openTab will open console tab with that recorid 
+  - which will consume contextinfo (say ecn_id - aka Enterprise customer id /Global party id )
+  - apex class will consume that ecn_id and identify salesforce record id 
+  - workspaceAPI.openTab will open console tab with that recorid 
 
  SF to Openfin exchange
   - Aura will listen for tab focused event from console app via 
-        -      onTabFocused : function(component, event, helper)
-        -     extract Salesforce record_id
-        -     apex class will translate Salesforce record_id into ecn_id 
-        -    window.fin.me.interop.setContext({type: 'instrument', id: {ticker:tickerValue}}) 
-   
+  - onTabFocused : function(component, event, helper)
+  - extract Salesforce record_id
+  - apex class will translate Salesforce record_id into ecn_id 
+  - window.fin.me.interop.setContext({type: 'instrument', id: {ticker:tickerValue}}) 
+
 Why Aura and not LWC 
 - LWC does not support  Console Workspace API currently and the goal was to work for Console app and standard app 
 - if you intend to deploy without console workspace AAPI then you can leverage LWC 

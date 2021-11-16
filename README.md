@@ -9,7 +9,8 @@ Openfin side - Look at openfinasset folder
  Salesforce side 
   -  Please install unlocked package 
        - sfdx force:package:install --package 04t1U000007Y8W4QAK --wait 10
-  Or 
+      
+   Or 
       - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1U000007Y8W4QAK
 
 NOTE ::  Please change the field name in OpenfinSFDataRetriever as per your need 

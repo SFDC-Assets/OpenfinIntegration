@@ -1,0 +1,19 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "OpenfinSFIntegrationpkg",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "OpenfinSFIntegrationPackage",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "OpenfinSFIntegrationpkg": "0Ho1U000000Kz44SAC",
+        "OpenfinSFIntegrationpkg@0.1.0-1": "04t1U000007Y8W4QAK"
+    }
+}
